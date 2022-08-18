@@ -1,6 +1,5 @@
 package Easy;
 
-import java.util.Iterator;
 
 public class BestTimetoBuyandSellStock {
 	/*
