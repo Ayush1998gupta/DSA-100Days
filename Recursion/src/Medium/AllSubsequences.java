@@ -7,7 +7,7 @@ public class AllSubsequences {
 	public static ArrayList<String> subsequences(String str){
 		if(str.length()==0) {
 			ArrayList<String> arr=new ArrayList<String>();
-			arr.add(str);
+			arr.add(str); 
 			return arr;
 		}
 		ArrayList<String> smallop=subsequences(str.substring(1));
@@ -15,7 +15,7 @@ public class AllSubsequences {
 		ArrayList<String> output=  new ArrayList<String>();
 		for (int i = 0; i < smallop.size(); i++) {
 			output.add(smallop.get(i));
-			output.add(str.charAt(0)+smallop.get(i));
+			output.add(smallop.get(i)+str.charAt(0));
 			
 		}
 		return output;
